@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+}
+.wrap .homePage {
+  width: 100%;
+  height: 100vh;
+  transition: 1s;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/bgImg1.jpg);
+}
+.wrap .homePage .backgroundMack {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px 7.5%;
+}
+.wrap .homePage .backgroundMack header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .homePage .backgroundMack header .logo img {
+  height: 90px;
+}
+.wrap .homePage .backgroundMack header .soundStatistic img {
+  height: 90px;
+}
+.wrap .homePage .backgroundMack main {
+  width: 100%;
+  height: calc(100vh - 194px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.wrap .homePage .backgroundMack main .mainTop {
+  width: 100%;
+  display: flex;
+  margin-bottom: 100px;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft {
+  display: flex;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl {
+  display: flex;
+  align-items: flex-end;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl #controlBtn {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .playBtn {
+  background-image: url(../img/play.png);
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .pauseBtn {
+  background-image: url(../img/pauseBtn.png);
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .soundVolume {
+  transform: rotate(270deg);
+  margin-bottom: 110px;
+  margin-left: -50px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/soundLine.png);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .soundVolume img {
+  width: 22px;
+  position: absolute;
+  margin-left: 44%;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .soundVolume input {
+  width: 210px;
+  opacity: 0;
+  cursor: pointer;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .musicInfo {
+  color: white;
+  position: relative;
+  top: 10px;
+  right: 30px;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .musicInfo .performerName {
+  margin-top: 20px;
+  color: #E6E6E6;
+  font-size: 1.4em;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainLeft .musicInfo .musicName {
+  min-width: 400px;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainRight {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainRight .swichBgBtns img {
+  width: 40px;
+  margin: 0 30px;
+  cursor: pointer;
+  margin-top: 110px;
+}
+.wrap .homePage .backgroundMack main .mainTop .mainRight .swichBgBtns img:last-child {
+  transform: rotate(180deg);
+}
+.wrap .homePage .backgroundMack main .mainBottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .homePage .backgroundMack main .mainBottom .radioBtnContainer {
+  display: flex;
+}
+.wrap .homePage .backgroundMack main .mainBottom .radioBtnContainer .radioBtn {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/radioBtn.png);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.wrap .homePage .backgroundMack main .mainBottom .radioBtnContainer .radioBtn__active {
+  background-image: url(../img/activeRadioBtn.png);
+}
+
+@media screen and (max-width: 1512px) {
+  .wrap .homePage .backgroundMack header .logo img {
+    height: 80px;
+  }
+  .wrap .homePage .backgroundMack header .soundStatistic img {
+    height: 75px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl #controlBtn {
+    width: 180px;
+    height: 180px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .soundVolume {
+    margin-bottom: 100px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .soundVolume input {
+    width: 190px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .soundVolume img {
+    width: 20px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .musicInfo .musicName {
+    font-size: 2em;
+    min-width: 330px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .musicInfo .performerName {
+    font-size: 1.3em;
+    margin-bottom: 100px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainRight .swichBgBtns img {
+    width: 38px;
+  }
+  .wrap .homePage .backgroundMack main .mainBottom .radioBtnContainer .radioBtn {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .wrap .homePage .backgroundMack {
+    padding: 25px 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wrap .homePage .backgroundMack header {
+    display: flex;
+    justify-content: center;
+  }
+  .wrap .homePage .backgroundMack header .logo img {
+    height: 55px;
+  }
+  .wrap .homePage .backgroundMack header .soundStatistic img {
+    height: 60px;
+    display: none;
+  }
+  .wrap .homePage .backgroundMack main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap .homePage .backgroundMack main .mainTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl {
+    margin-left: 47px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl #controlBtn {
+    width: 150px;
+    height: 150px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .soundVolume {
+    background-size: 100%;
+    margin-bottom: 80px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .soundVolume input {
+    width: 160px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .soundControl .soundVolume img {
+    width: 17px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .musicInfo {
+    right: 0;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .musicInfo .musicName {
+    font-size: 1.6em;
+    min-width: 300px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainLeft .musicInfo .performerName {
+    font-size: 1.1em;
+    margin-bottom: 0px;
+    margin-top: 8px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainRight {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .wrap .homePage .backgroundMack main .mainTop .mainRight .swichBgBtns img {
+    width: 28px;
+    margin-top: 0;
+    margin: 0 18px;
+  }
+  .wrap .homePage .backgroundMack main .mainBottom .radioBtnContainer .radioBtn {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

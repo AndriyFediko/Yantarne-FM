@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yantarne FM</title>
+    <link rel="icon" href="https://yantarne.fm/img/favicon.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="homePage">
+            <header></header>
+            <div class="backgroundMack">
+                <header>
+                    <div class="logo">
+                        <img src="./img/logo.png" alt="Yantarne FM">
+                    </div>
+                    <div class="soundStatistic">
+                        <img src="./img/wales.png" alt="soundStatistic">
+                    </div>
+                </header>
+                <main>
+                    <div class="mainTop">
+                        <div class="mainLeft">
+                            <div class="soundControl">
+                                <div id="controlBtn" class="playBtn"></div>
+                                <div class="soundVolume">
+                                    <img id="volumeInpCursor" src="./img/soundLineCursor.png" alt=".">
+                                    <input id="volumeInp" value="0.5" max="1" step="0.01" type="range">
+                                </div>
+                            </div>
+                            <div class="musicInfo">
+                                <div class="musicName">Виконавець</div>
+                                <div class="performerName">Назва треку</div>
+                            </div>
+                        </div>
+                        <div class="mainRight">
+                            <div class="swichBgBtns">
+                                <img id="sliderBtnPrev" src="./img/sliderButton.png" alt="<">
+                                <img id="sliderbtnNext" src="./img/sliderButton.png" alt=">">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainBottom">
+                        <div class="radioBtnContainer">
+                            <div class="radioBtn radioBtn__active"></div>
+                            <div class="radioBtn"></div>
+                            <div class="radioBtn"></div>
+                            <div class="radioBtn"></div>
+                            <div class="radioBtn"></div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
